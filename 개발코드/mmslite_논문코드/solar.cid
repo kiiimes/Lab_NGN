@@ -1,0 +1,158 @@
+<SCL xmlns="http://www.iec.ch/61850/2003/SCL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iec.ch/61850/2003/SCL
+SCL.xsd" version="2007" revision="A">
+    <Header id="EMS Solar" nameStructure="IEDName"/>
+    <Communication>
+        <SubNetwork name="W01" type="8-MMS">
+            <Text>Station bus</Text>
+            <BitRate unit="b/s">10</BitRate>
+            <ConnectedAP iedName="EMS1" apName="S1">
+                <Address>
+                    <P type="IP">210.107.212.87</P>
+                    <P type="IP-SUBNET">255.255.255.0</P>
+                    <P type="IP-GATEWAY">210.107.212.1</P>
+                    <P type="OSI-PSEL">00000001</P>
+                    <P type="OSI-SSEL">0001</P>
+                    <P type="OSI-TSEL">0001</P>
+                    <P type="OSI-AP-Title">1 1 9999 1</P>
+                    <P type="OSI-AE-Qualifier">101</P>
+                    <P type="OSI-AP-Invoke">102</P>
+                    <P type="OSI-AE-Invoke">103</P>
+                </Address>
+            </ConnectedAP>
+        </SubNetwork>
+    </Communication>
+    <IED name="EMS1">
+        <Services>
+            <DynAssociation/>
+            <GetDirectory/>
+            <GetDataObjectDefinition/>
+            <GetDataSetValue/>
+            <DataSetDirectory/>
+            <ReadWrite/>
+            <FileHandling/>
+            <ConfDataSet max="4" maxAttributes="50"/>
+            <ConfReportControl max="12"/>
+            <ReportSettings cbName="Conf" datSet="Conf" rptID="Dyn" optFields="Conf" bufTime="Dyn" trgOps="Dyn" intgPd="Dyn" resvTms="true"/>
+            <ConfLogControl max="1"/>
+            <ConfLNs fixLnInst="true"/>
+            <GetCBValues/>
+            <GOOSE max="2"/>
+            <GSESettings appID="Conf" cbName="Conf" datSet="Conf"/>
+        </Services>
+        <AccessPoint name="S1">
+            <Server>
+                <Authentication/>
+                <LDevice desc="description" inst="Solar1">
+                    <LN0 desc="description" lnType="LLN0" lnClass="LLN0" inst="">
+                        <DataSet name="Solar1DS">
+                            <FCDA ldInst="Solar1" prefix="" lnClass="MMDC" lnInst="1" fc="MX"/>
+                            <FCDA ldInst="Solar1" prefix="" lnClass="MMET" lnInst="1" fc="MX"/>
+                        </DataSet>
+                        <DOI name="Mod">
+                            <DAI name="stVal">
+                                <Val>1</Val>    <!-- 1=On -->
+                            </DAI>
+                        </DOI>
+                        <ReportControl name="EMS1SolarRCB" desc="Solar Report Control Block" rptID="SolarVal" datSet="Solar1DS" confRev="0" buffered="true" bufTime="60" intgPd="1000">
+                            <TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+                            <OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" bufOvfl="true" entryID="true" configRef="true"/>
+                            <RptEnabled max="1">
+                            </RptEnabled>
+                        </ReportControl>
+                    </LN0>
+                    <LN lnType="MMDC" lnClass="MMDC" inst="1">
+                    </LN>
+                    <LN lnType="MMET" lnClass="MMET" inst="1">
+                    </LN>
+                </LDevice>
+            </Server>
+        </AccessPoint>
+    </IED>
+ 
+    <DataTypeTemplates>
+        <!-- the following LNodeTypes are taken from IEC 61850-7-4 and have all optional objects included -->
+        <!-- section 5.3.2 LN: Physical device information Name: LPHD-->
+        <LNodeType id="LPHD" lnClass="LPHD">
+            <DO name="PhyNam"    type="DPL"/>    <!-- M-->
+            <DO name="PhyHealth"    type="ENS"/>    <!-- M-->
+            <DO name="Proxy"    type="SPS"/>    <!-- M-->
+        </LNodeType>
+        <!-- LN: Logical node zero Name: LLN0-->
+        <LNodeType id="LLN0" lnClass="LLN0">
+            <DO name="Beh"        type="ENS"/>    <!-- M CommonLogicalNode-->
+            <DO name="Mod"        type="ENC"/>    <!-- C1 CommonLogicalNode-->
+        </LNodeType>
+ 
+        <LNodeType id="MMDC" lnClass="MMDC">
+            <DO name="Watt"        type="MV"/>    
+            <DO name="Amp"        type="MV"/>    
+            <DO name="Vol"        type="MV"/>    
+        </LNodeType>
+ 
+        <LNodeType id="MMET" lnClass="MMET">
+            <DO name="EnvTmp"        type="MV"/>    
+            <DO name="EnvHum"        type="MV"/>    
+            <DO name="HorWdSpd"        type="MV"/>    
+        </LNodeType>
+ 
+        <!-- Device name plate (DPL)-->
+        <DOType id="DPL" cdc="DPL">
+            <DA name="vendor"    fc="DC"    bType="VisString255"/>                <!-- M -->
+        </DOType>
+ 
+        <!-- NEW IN EDITION 2. Defined in 61850-7-3 -->
+        <!-- Enumerated status (ENS)-->
+        <DOType id="ENS" cdc="ENS">
+            <!-- DEBUG: fix "type" for "stVal". May need several ENS types. Used for many things in part 7-4 -->
+            <DA name="stVal"     fc="ST" bType="Enum" type="dirGeneralEnum" dchg="true"/>            <!-- M -->
+            <DA name="q"         fc="ST" bType="Quality" qchg="true"/>              <!-- M -->
+            <DA name="t"         fc="ST" bType="Timestamp"/>                    <!-- M -->
+        </DOType>
+ 
+        <!-- Single point status (SPS)-->
+        <DOType id="SPS" cdc="SPS">
+            <DA name="stVal"    fc="ST"    bType="BOOLEAN"        dchg="true"/>        <!-- M -->
+            <DA name="q"         fc="ST" bType="Quality"     qchg="true"/>        <!-- M -->
+            <DA name="t"         fc="ST" bType="Timestamp"/>                <!-- M -->
+        </DOType>
+ 
+        <!-- NEW IN EDITION 2. Defined in 61850-7-3 -->
+        <DOType id="ENC" cdc="ENC">
+            <DA name="stVal"    fc="ST"    bType="Enum" type="encEnum" dchg="true"/>    <!-- M -->
+            <DA name="q"         fc="ST" bType="Quality"     qchg="true"/>        <!-- M -->
+            <DA name="t"         fc="ST" bType="Timestamp"/>                <!-- M -->
+            <DA name="ctlModel"    fc="CF"    bType="Enum" type="ctlModelEnum"/>        <!-- M -->
+        </DOType>
+        <DOType id="MV" cdc="MV">
+            <DA name="mag"        fc="MX"    bType="Struct" type="AnalogueValue"    dchg="true"/>    <!-- M -->
+            <DA name="q"         fc="MX" bType="Quality"             qchg="true"/>    <!-- M -->
+            <DA name="t"         fc="MX" bType="Timestamp"/>                     <!-- M -->
+        </DOType>
+ 
+        <DAType id="AnalogueValue">        <!-- sec 6.3 -->
+            <BDA name="f"             bType="FLOAT32"/>                <!-- GC_1-->
+        </DAType>
+ 
+        <EnumType id="ctlModelEnum">
+            <EnumVal ord="0">status-only</EnumVal>
+            <EnumVal ord="1">direct-with-normal-security</EnumVal>
+            <EnumVal ord="2">sbo-with-normal-security</EnumVal>
+            <EnumVal ord="3">direct-with-enhanced-security</EnumVal>
+            <EnumVal ord="4">sbo-with-enhanced-security</EnumVal>
+        </EnumType>
+ 
+        <EnumType id="dirGeneralEnum">
+            <EnumVal ord="0">unknown</EnumVal>
+            <EnumVal ord="1">forward</EnumVal>
+            <EnumVal ord="2">backward</EnumVal>
+            <EnumVal ord="3">both</EnumVal>
+        </EnumType>
+ 
+        <EnumType id="encEnum">
+            <!-- DEBUG: what are the values? -->
+            <EnumVal ord="0">0</EnumVal>
+            <EnumVal ord="1">1</EnumVal>
+        </EnumType>
+ 
+    </DataTypeTemplates>
+</SCL>

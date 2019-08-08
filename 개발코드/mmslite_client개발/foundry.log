@@ -1,0 +1,1946 @@
+
+
+***********************************************************
+          LOGGING STARTED Tue Sep 18 21:52:09 2018
+***********************************************************
+
+2018-09-18 21:52:09.166 SLOGALWAYS (fo_main.c 268 ThreadId=0x35F8 (13816)) 
+  Executing '..\..\bin\foundry'
+  Input TDL file         : '..\..\mvl\usr\client\clntobj.odf'
+  Configuration file     : '..\..\mvl\util\foundry\win32\align.cfg'
+  Output 'C' file        : '..\..\mvl\usr\client\clntobj.c'
+  Output 'H' file        : '..\..\mvl\usr\client\clntobj.h'
+  Output 'LAP XML' file  : '..\..\mvl\usr\client\lap_out.xml'
+  Output 'Lefttodo' file : '..\..\mvl\usr\client\lefttodo.txt'
+  Including file    : 'gentypes.odf'
+  Including file    : 'rpt.odf'
+
+2018-09-18 21:52:09.170 SLOGALWAYS (fo_parse.c 157 ThreadId=0x35F8 (13816)) 
+  Searching for object definitions: 
+  String 2 = '../../mvl/util/foundry/uca09'
+  
+    currFile = '..\..\mvl\usr\client\clntobj.odf'
+  String 2 = ':TV'
+  Type Unique Flag = 'FALSE'
+  Type Unique Flag = 'FALSE'
+  Type Base Flag = 'FALSE'
+  Type Delete Unused Flag = 'TRUE'
+  Type UCA Flag = 'FALSE'
+  
+    currFile = '..\..\mvl\usr\client\clntobj.odf'
+  
+    currFile = 'gentypes.odf'
+  
+    userLabelIn = 'BOOLEAN'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Bool'
+    userDescIn  = '0 or 1'
+  
+    userLabelIn = 'INT8'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Byte'
+    userDescIn  = '-128 to 127'
+  
+    userLabelIn = 'INT16'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Short'
+    userDescIn  = '-32,768 to 32,767'
+  
+    userLabelIn = 'INT32'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Long'
+    userDescIn  = '-2,147,483,648 to 2,147,483,647'
+  
+    userLabelIn = 'INT128'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Long'
+    userDescIn  = '-2**127 to (2**127)-1 Good luck'
+  
+    userLabelIn = 'INT8U'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Ubyte'
+    userDescIn  = '0 to 255'
+  
+    userLabelIn = 'INT16U'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Ushort'
+    userDescIn  = '0 to 65,535'
+  
+    userLabelIn = 'INT32U'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Ulong'
+    userDescIn  = '0 to 4,294,967,295'
+  
+    userLabelIn = 'FLOAT32'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Float'
+    userDescIn  = 'Range of values IEEE 754 single'
+  
+    userLabelIn = 'FLOAT64'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Double'
+    userDescIn  = 'Range of values IEEE 754 double'
+  
+    userLabelIn = 'ENUMERATED8'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Byte'
+    userDescIn  = 'signed enumeration8-bits'
+  
+    userLabelIn = 'ENUMERATED16'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Short'
+    userDescIn  = 'signed enumeration16-bits'
+  
+    userLabelIn = 'OCTET_STRING8'
+    userFlagsIn = ':T'
+    userTdlIn   = 'OVstring8'
+    userDescIn  = 'Maximum 8 Octets'
+  
+    userLabelIn = 'OCTET_STRING64'
+    userFlagsIn = ':T'
+    userTdlIn   = 'OVstring64'
+    userDescIn  = 'Maximum 64 Octets'
+  
+    userLabelIn = 'VISIBLE_STRING255'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Vstring255'
+    userDescIn  = 'Maximum 255 characters'
+  
+    userLabelIn = 'VISIBLE_STRING64'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Vstring64'
+    userDescIn  = 'Maximum 64 characters'
+  
+    userLabelIn = 'VISIBLE_STRING97'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Vstring97'
+    userDescIn  = 'Maximum 97 characters'
+  
+    userLabelIn = 'UTC_TM'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Utctime'
+    userDescIn  = 'Used by TimeStamp'
+  
+    userLabelIn = 'CODED_ENUM2'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Bstring2'
+    userDescIn  = '2 bits - 4 values'
+  
+    userLabelIn = 'UNICODE_STRING255'
+    userFlagsIn = ':T'
+    userTdlIn   = 'UTF8Vstring255'
+    userDescIn  = 'Maximum 255 Unicode'
+  
+    userLabelIn = 'TimeStamp'
+    userFlagsIn = ':T'
+    userTdlIn   = '<UTC_TM>'
+    userDescIn  = 'UTC Time'
+  Inserting nested type 'UTC_TM'
+  Inserting nested type 'UTC_TM'
+    References    'UTC_TM'
+  
+    userLabelIn = 'EntryTime'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Btime6'
+    userDescIn  = ' 8.1 Section 8.1.3.7'
+  
+    userLabelIn = 'Quality'
+    userFlagsIn = ':T'
+    userTdlIn   = 'BVstring13'
+    userDescIn  = 'Quality'
+  
+    userLabelIn = 'IDENT'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Vstring65'
+    userDescIn  = ''
+  
+    userLabelIn = 'BOOL'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Bool'
+    userDescIn  = 'generalboolean'
+  
+    userLabelIn = 'B2'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Bstring2'
+    userDescIn  = 'GeneralDoubleBit'
+  
+    userLabelIn = 'D'
+    userFlagsIn = ':T'
+    userTdlIn   = 'VString32'
+    userDescIn  = 'generaldescriptioncomponent'
+  
+    userLabelIn = 'DB'
+    userFlagsIn = ':T'
+    userTdlIn   = 'UShort'
+    userDescIn  = 'Deadband'
+  
+    userLabelIn = 'F'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Float'
+    userDescIn  = 'Generalizedfloatingpoint'
+  
+    userLabelIn = 'FF'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Float'
+    userDescIn  = 'FrozenFloatingPointvalue'
+  
+    userLabelIn = 'HL'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Short'
+    userDescIn  = 'HighLimit'
+  
+    userLabelIn = 'HHL'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Short'
+    userDescIn  = 'HighHighLimit'
+  
+    userLabelIn = 'LL'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Short'
+    userDescIn  = 'lowlimit'
+  
+    userLabelIn = 'LLL'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Short'
+    userDescIn  = 'lowlowlimit'
+  
+    userLabelIn = 'I'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Short'
+    userDescIn  = 'Generalizedicomponenttype'
+  
+    userLabelIn = 'FI'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Short'
+    userDescIn  = 'frozenicomponenttype'
+  
+    userLabelIn = 'O'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Float'
+    userDescIn  = 'Offset'
+  
+    userLabelIn = 'Q'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Bvstring16'
+    userDescIn  = 'Generalizedqualitybitstringtype'
+  
+    userLabelIn = 'R'
+    userFlagsIn = ':T'
+    userTdlIn   = 'ULong'
+    userDescIn  = 'runningcount'
+  
+    userLabelIn = 'FR'
+    userFlagsIn = ':T'
+    userTdlIn   = 'ULong'
+    userDescIn  = 'frozenrunningcount'
+  
+    userLabelIn = 'S'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Float'
+    userDescIn  = 'scale'
+  
+    userLabelIn = 'T'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Btime6'
+    userDescIn  = 'GeneralizedTimeStamp'
+  
+    userLabelIn = 'FT'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Btime6'
+    userDescIn  = 'frozentimestamp'
+  
+    userLabelIn = 'PP'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Bool'
+    userDescIn  = 'PseudoPoint'
+  
+    userLabelIn = 'U'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Short'
+    userDescIn  = 'Enumeratevalue'
+  
+    userLabelIn = 'VSTR8'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Vstring8'
+    userDescIn  = 'VisibleString8-variablelength'
+  
+    userLabelIn = 'VSTR16'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Vstring16'
+    userDescIn  = 'VisibleString16-variablelength'
+  
+    userLabelIn = 'VSTR32'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Vstring32'
+    userDescIn  = 'VisbleString32-variablelength'
+  
+    userLabelIn = 'VSTR64'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Vstring64'
+    userDescIn  = 'VisibleString64-variablelength'
+  
+    userLabelIn = 'VSTR65'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Vstring65'
+    userDescIn  = 'VisibleString65-variablelength'
+  
+    userLabelIn = 'VSTR128'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Vstring128'
+    userDescIn  = 'VisibleString128-variablelength'
+  
+    userLabelIn = 'BSTR1'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Bstring1'
+    userDescIn  = 'Twobitbistring'
+  
+    userLabelIn = 'BSTR2'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Bstring2'
+    userDescIn  = 'Twobitbistring'
+  
+    userLabelIn = 'BSTR8'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Bstring8'
+    userDescIn  = 'Bitstring-8'
+  
+    userLabelIn = 'BSTR16'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Bstring16'
+    userDescIn  = 'Bitstring-16'
+  
+    userLabelIn = 'BSTR32'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Bstring32'
+    userDescIn  = 'Bitstring-32'
+  
+    userLabelIn = 'VBSTR8'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Bvstring8'
+    userDescIn  = 'VariablelengthBitstring-8'
+  
+    userLabelIn = 'VBSTR16'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Bvstring16'
+    userDescIn  = 'VariablelengthBitstring-16'
+  
+    userLabelIn = 'VBSTR32'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Bvstring32'
+    userDescIn  = 'VariablelengthBitstring-32'
+  
+    userLabelIn = 'INT8S'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Byte'
+    userDescIn  = 'SignedInteger-8'
+  
+    userLabelIn = 'INT16S'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Short'
+    userDescIn  = 'SignedInteger-16'
+  
+    userLabelIn = 'INT32S'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Long'
+    userDescIn  = 'SignedInteger-32'
+  
+    userLabelIn = 'FLT32'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Float'
+    userDescIn  = '32bitfloatingpoint'
+  
+    userLabelIn = 'FLT64'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Double'
+    userDescIn  = '64bitfloatingpoint'
+  
+    userLabelIn = 'BTIME4'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Btime4'
+    userDescIn  = 'Binarytimeofday'
+  
+    userLabelIn = 'BTIME6'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Btime6'
+    userDescIn  = 'Binarytimeofdaytomsec'
+  
+    userLabelIn = 'ENUM8'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Byte'
+    userDescIn  = 'signed enumeration8-bits'
+  
+    userLabelIn = 'ENUM16'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Short'
+    userDescIn  = 'signed enumeration16-bits'
+  
+    userLabelIn = 'MAG'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT32S>'
+    userDescIn  = 'Magnitude'
+  Inserting nested type 'INT32S'
+  Inserting nested type 'INT32S'
+    References    'INT32S'
+  
+    userLabelIn = 'ANG'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT32S>'
+    userDescIn  = 'Angle'
+  Inserting nested type 'INT32S'
+  Inserting nested type 'INT32S'
+    References    'INT32S'
+  
+    userLabelIn = 'ACCRPTENA'
+    userFlagsIn = ':T'
+    userTdlIn   = '<BOOL>'
+    userDescIn  = 'AccumulatorReportEnable'
+  Inserting nested type 'BOOL'
+  Inserting nested type 'BOOL'
+    References    'BOOL'
+  
+    userLabelIn = 'ACCRS'
+    userFlagsIn = ':T'
+    userTdlIn   = '<BOOL>'
+    userDescIn  = 'AccumulatorReset'
+  Inserting nested type 'BOOL'
+  Inserting nested type 'BOOL'
+    References    'BOOL'
+  
+    userLabelIn = 'ACCSET'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR16>'
+    userDescIn  = 'AccumulatorSetting'
+  Inserting nested type 'VSTR16'
+  Inserting nested type 'VSTR16'
+    References    'VSTR16'
+  
+    userLabelIn = 'ACTTAGARR'
+    userFlagsIn = ':T'
+    userTdlIn   = '<BSTR8>'
+    userDescIn  = 'Accumulatortagarray'
+  Inserting nested type 'BSTR8'
+  Inserting nested type 'BSTR8'
+    References    'BSTR8'
+  
+    userLabelIn = 'ANCESTRY'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR32>'
+    userDescIn  = 'Ancestry'
+  Inserting nested type 'VSTR32'
+  Inserting nested type 'VSTR32'
+    References    'VSTR32'
+  
+    userLabelIn = 'ANFMT'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Vstring6'
+    userDescIn  = 'AnalogFormat'
+  
+    userLabelIn = 'BUFTIM'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT32U>'
+    userDescIn  = 'Buffertime'
+  Inserting nested type 'INT32U'
+  Inserting nested type 'INT32U'
+    References    'INT32U'
+  
+    userLabelIn = 'CID'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT32S>'
+    userDescIn  = 'CanonicalID'
+  Inserting nested type 'INT32S'
+  Inserting nested type 'INT32S'
+    References    'INT32S'
+  
+    userLabelIn = 'CKTID'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR32>'
+    userDescIn  = 'CircuitID'
+  Inserting nested type 'VSTR32'
+  Inserting nested type 'VSTR32'
+    References    'VSTR32'
+  
+    userLabelIn = 'CKTPHS'
+    userFlagsIn = ':T'
+    userTdlIn   = '<ENUM8>'
+    userDescIn  = 'CircuitPhases'
+  Inserting nested type 'ENUM8'
+  Inserting nested type 'ENUM8'
+    References    'ENUM8'
+  
+    userLabelIn = 'CLASS'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR32>'
+    userDescIn  = 'Classidentifier'
+  Inserting nested type 'VSTR32'
+  Inserting nested type 'VSTR32'
+    References    'VSTR32'
+  
+    userLabelIn = 'COMMADR'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR16>'
+    userDescIn  = 'Communicationaddress'
+  Inserting nested type 'VSTR16'
+  Inserting nested type 'VSTR16'
+    References    'VSTR16'
+  
+    userLabelIn = 'COMMREV'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR8>'
+    userDescIn  = 'Communicationrevision'
+  Inserting nested type 'VSTR8'
+  Inserting nested type 'VSTR8'
+    References    'VSTR8'
+  
+    userLabelIn = 'CONTCURRTG'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR16>'
+    userDescIn  = 'Continuouscurrentrating'
+  Inserting nested type 'VSTR16'
+  Inserting nested type 'VSTR16'
+    References    'VSTR16'
+  
+    userLabelIn = 'COUNT'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT16U>'
+    userDescIn  = 'count'
+  Inserting nested type 'INT16U'
+  Inserting nested type 'INT16U'
+    References    'INT16U'
+  
+    userLabelIn = 'CRIRPT'
+    userFlagsIn = ':T'
+    userTdlIn   = '<BOOL>'
+    userDescIn  = 'criticalreport'
+  Inserting nested type 'BOOL'
+  Inserting nested type 'BOOL'
+    References    'BOOL'
+  
+    userLabelIn = 'DATSETNAM'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR16>'
+    userDescIn  = 'Datasetname'
+  Inserting nested type 'VSTR16'
+  Inserting nested type 'VSTR16'
+    References    'VSTR16'
+  
+    userLabelIn = 'DESTAE'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR32>'
+    userDescIn  = 'destinationAEname'
+  Inserting nested type 'VSTR32'
+  Inserting nested type 'VSTR32'
+    References    'VSTR32'
+  
+    userLabelIn = 'DEVFCT'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT16U>'
+    userDescIn  = 'devicefunction'
+  Inserting nested type 'INT16U'
+  Inserting nested type 'INT16U'
+    References    'INT16U'
+  
+    userLabelIn = 'DEVMDLS'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR128>'
+    userDescIn  = 'devicemodelname'
+  Inserting nested type 'VSTR128'
+  Inserting nested type 'VSTR128'
+    References    'VSTR128'
+  
+    userLabelIn = 'DOW'
+    userFlagsIn = ':T'
+    userTdlIn   = '<ENUM8>'
+    userDescIn  = 'Dayoftheweek'
+  Inserting nested type 'ENUM8'
+  Inserting nested type 'ENUM8'
+    References    'ENUM8'
+  
+    userLabelIn = 'DOWSCHED'
+    userFlagsIn = ':T'
+    userTdlIn   = '[6:<BTIME4>]'
+    userDescIn  = 'Dayoftheweekschedule'
+  Inserting nested type 'BTIME4'
+  Inserting nested type 'BTIME4'
+    References    'BTIME4'
+  
+    userLabelIn = 'ENABLE'
+    userFlagsIn = ':T'
+    userTdlIn   = '<BOOL>'
+    userDescIn  = 'enable'
+  Inserting nested type 'BOOL'
+  Inserting nested type 'BOOL'
+    References    'BOOL'
+  
+    userLabelIn = 'ENCOPT'
+    userFlagsIn = ':T'
+    userTdlIn   = '<BSTR8>'
+    userDescIn  = 'encodingoptions'
+  Inserting nested type 'BSTR8'
+  Inserting nested type 'BSTR8'
+    References    'BSTR8'
+  
+    userLabelIn = 'ENROLL'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR32>'
+    userDescIn  = 'enrollname'
+  Inserting nested type 'VSTR32'
+  Inserting nested type 'VSTR32'
+    References    'VSTR32'
+  
+    userLabelIn = 'EORBDESC'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR64>'
+    userDescIn  = ''
+  Inserting nested type 'VSTR64'
+  Inserting nested type 'VSTR64'
+    References    'VSTR64'
+  
+    userLabelIn = 'EVACON'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR32>'
+    userDescIn  = 'evaluationconditionname'
+  Inserting nested type 'VSTR32'
+  Inserting nested type 'VSTR32'
+    References    'VSTR32'
+  
+    userLabelIn = 'EVACNS'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR32>'
+    userDescIn  = 'evaluationconditionname'
+  Inserting nested type 'VSTR32'
+  Inserting nested type 'VSTR32'
+    References    'VSTR32'
+  
+    userLabelIn = 'EVACRI'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR32>'
+    userDescIn  = 'evaluationcriterianame'
+  Inserting nested type 'VSTR32'
+  Inserting nested type 'VSTR32'
+    References    'VSTR32'
+  
+    userLabelIn = 'EVAFCT'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR32>'
+    userDescIn  = 'evaluationfunctionname'
+  Inserting nested type 'VSTR32'
+  Inserting nested type 'VSTR32'
+    References    'VSTR32'
+  
+    userLabelIn = 'EVAPAR'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR32>'
+    userDescIn  = 'evaluationparametersname'
+  Inserting nested type 'VSTR32'
+  Inserting nested type 'VSTR32'
+    References    'VSTR32'
+  
+    userLabelIn = 'EVTENA'
+    userFlagsIn = ':T'
+    userTdlIn   = '<BOOL>'
+    userDescIn  = 'eventenable'
+  Inserting nested type 'BOOL'
+  Inserting nested type 'BOOL'
+    References    'BOOL'
+  
+    userLabelIn = 'FLTCURDUR'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT16U>'
+    userDescIn  = 'Faultcurrentduration'
+  Inserting nested type 'INT16U'
+  Inserting nested type 'INT16U'
+    References    'INT16U'
+  
+    userLabelIn = 'FLTCURRTG'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT16S>'
+    userDescIn  = 'Placeholder'
+  Inserting nested type 'INT16S'
+  Inserting nested type 'INT16S'
+    References    'INT16S'
+  
+    userLabelIn = 'FRZENA'
+    userFlagsIn = ':T'
+    userTdlIn   = '<BOOL>'
+    userDescIn  = 'freezeenable'
+  Inserting nested type 'BOOL'
+  Inserting nested type 'BOOL'
+    References    'BOOL'
+  
+    userLabelIn = 'FRZPD'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT32U>'
+    userDescIn  = 'freezeperiod'
+  Inserting nested type 'INT32U'
+  Inserting nested type 'INT32U'
+    References    'INT32U'
+  
+    userLabelIn = 'FWDPWRHA'
+    userFlagsIn = ':T'
+    userTdlIn   = '[31:<FLT32>]'
+    userDescIn  = 'ForwardPowerharmonics'
+  Inserting nested type 'FLT32'
+  Inserting nested type 'FLT32'
+    References    'FLT32'
+  
+    userLabelIn = 'HWREV'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR8>'
+    userDescIn  = 'HardwareRevision'
+  Inserting nested type 'VSTR8'
+  Inserting nested type 'VSTR8'
+    References    'VSTR8'
+  
+    userLabelIn = 'HZRTG'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR32>'
+    userDescIn  = 'Hertzrating'
+  Inserting nested type 'VSTR32'
+  Inserting nested type 'VSTR32'
+    References    'VSTR32'
+  
+    userLabelIn = 'INDAT'
+    userFlagsIn = ':T'
+    userTdlIn   = '<IDENT>'
+    userDescIn  = 'InputDataName'
+  Inserting nested type 'IDENT'
+  Inserting nested type 'IDENT'
+    References    'IDENT'
+  
+    userLabelIn = 'INTGPD'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT32U>'
+    userDescIn  = 'IntegrityPeriod'
+  Inserting nested type 'INT32U'
+  Inserting nested type 'INT32U'
+    References    'INT32U'
+  
+    userLabelIn = 'LINLENM'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT16U>'
+    userDescIn  = 'Linelengthinmeters'
+  Inserting nested type 'INT16U'
+  Inserting nested type 'INT16U'
+    References    'INT16U'
+  
+    userLabelIn = 'LOC'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR128>'
+    userDescIn  = 'Location'
+  Inserting nested type 'VSTR128'
+  Inserting nested type 'VSTR128'
+    References    'VSTR128'
+  
+    userLabelIn = 'LOGENA'
+    userFlagsIn = ':T'
+    userTdlIn   = '<BOOL>'
+    userDescIn  = 'Logenable'
+  Inserting nested type 'BOOL'
+  Inserting nested type 'BOOL'
+    References    'BOOL'
+  
+    userLabelIn = 'LOGENR'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR32>'
+    userDescIn  = 'Logenroll'
+  Inserting nested type 'VSTR32'
+  Inserting nested type 'VSTR32'
+    References    'VSTR32'
+  
+    userLabelIn = 'LOGNAM'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR32>'
+    userDescIn  = 'Logname'
+  Inserting nested type 'VSTR32'
+  Inserting nested type 'VSTR32'
+    References    'VSTR32'
+  
+    userLabelIn = 'LOGSIZE'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT16U>'
+    userDescIn  = 'Logsize'
+  Inserting nested type 'INT16U'
+  Inserting nested type 'INT16U'
+    References    'INT16U'
+  
+    userLabelIn = 'LOGWRP'
+    userFlagsIn = ':T'
+    userTdlIn   = '<BOOL>'
+    userDescIn  = 'LogWrapped'
+  Inserting nested type 'BOOL'
+  Inserting nested type 'BOOL'
+    References    'BOOL'
+  
+    userLabelIn = 'MAC'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT8U>'
+    userDescIn  = 'MediumAccessControl'
+  Inserting nested type 'INT8U'
+  Inserting nested type 'INT8U'
+    References    'INT8U'
+  
+    userLabelIn = 'MDL'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR32>'
+    userDescIn  = 'Modelname'
+  Inserting nested type 'VSTR32'
+  Inserting nested type 'VSTR32'
+    References    'VSTR32'
+  
+    userLabelIn = 'MED'
+    userFlagsIn = ':T'
+    userTdlIn   = '<ENUM8>'
+    userDescIn  = 'mediatype'
+  Inserting nested type 'ENUM8'
+  Inserting nested type 'ENUM8'
+    References    'ENUM8'
+  
+    userLabelIn = 'MXREF'
+    userFlagsIn = ':T'
+    userTdlIn   = '<ENUM8>'
+    userDescIn  = 'Measurementreference'
+  Inserting nested type 'ENUM8'
+  Inserting nested type 'ENUM8'
+    References    'ENUM8'
+  
+    userLabelIn = 'MXTYP'
+    userFlagsIn = ':T'
+    userTdlIn   = '<ENUM8>'
+    userDescIn  = 'MeasurementType'
+  Inserting nested type 'ENUM8'
+  Inserting nested type 'ENUM8'
+    References    'ENUM8'
+  
+    userLabelIn = 'NAME'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR32>'
+    userDescIn  = 'ownername'
+  Inserting nested type 'VSTR32'
+  Inserting nested type 'VSTR32'
+    References    'VSTR32'
+  
+    userLabelIn = 'NEWTIM'
+    userFlagsIn = ':T'
+    userTdlIn   = '<BTIME6>'
+    userDescIn  = 'newesttime'
+  Inserting nested type 'BTIME6'
+  Inserting nested type 'BTIME6'
+    References    'BTIME6'
+  
+    userLabelIn = 'NUMBITS'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT16U>'
+    userDescIn  = 'numberofbits'
+  Inserting nested type 'INT16U'
+  Inserting nested type 'INT16U'
+    References    'INT16U'
+  
+    userLabelIn = 'NUMPLS'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT16U>'
+    userDescIn  = 'numberofpulses'
+  Inserting nested type 'INT16U'
+  Inserting nested type 'INT16U'
+    References    'INT16U'
+  
+    userLabelIn = 'NUMSMP'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT16U>'
+    userDescIn  = 'numberofsamples'
+  Inserting nested type 'INT16U'
+  Inserting nested type 'INT16U'
+    References    'INT16U'
+  
+    userLabelIn = 'NUMUNIT'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR32>'
+    userDescIn  = 'numberofunits'
+  Inserting nested type 'VSTR32'
+  Inserting nested type 'VSTR32'
+    References    'VSTR32'
+  
+    userLabelIn = 'OFFDUR'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT32U>'
+    userDescIn  = 'Offduration'
+  Inserting nested type 'INT32U'
+  Inserting nested type 'INT32U'
+    References    'INT32U'
+  
+    userLabelIn = 'OLDTIM'
+    userFlagsIn = ':T'
+    userTdlIn   = '<BTIME6>'
+    userDescIn  = 'Oldesttime'
+  Inserting nested type 'BTIME6'
+  Inserting nested type 'BTIME6'
+    References    'BTIME6'
+  
+    userLabelIn = 'ONDUR'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT32U>'
+    userDescIn  = 'Onduration'
+  Inserting nested type 'INT32U'
+  Inserting nested type 'INT32U'
+    References    'INT32U'
+  
+    userLabelIn = 'OPERDEV'
+    userFlagsIn = ':T'
+    userTdlIn   = '<B2>'
+    userDescIn  = 'Operatedevice'
+  Inserting nested type 'B2'
+  Inserting nested type 'B2'
+    References    'B2'
+  
+    userLabelIn = 'OPTFLDS'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VBSTR8>'
+    userDescIn  = 'Optionalfields'
+  Inserting nested type 'VBSTR8'
+  Inserting nested type 'VBSTR8'
+    References    'VBSTR8'
+  
+    userLabelIn = 'OUTDAT'
+    userFlagsIn = ':T'
+    userTdlIn   = '<IDENT>'
+    userDescIn  = 'outputdatasetname'
+  Inserting nested type 'IDENT'
+  Inserting nested type 'IDENT'
+    References    'IDENT'
+  
+    userLabelIn = 'OVRST'
+    userFlagsIn = ':T'
+    userTdlIn   = '<BOOL>'
+    userDescIn  = 'Overflowstatus'
+  Inserting nested type 'BOOL'
+  Inserting nested type 'BOOL'
+    References    'BOOL'
+  
+    userLabelIn = 'OWN'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR32>'
+    userDescIn  = 'Owner'
+  Inserting nested type 'VSTR32'
+  Inserting nested type 'VSTR32'
+    References    'VSTR32'
+  
+    userLabelIn = 'PRO'
+    userFlagsIn = ':T'
+    userTdlIn   = '<ENUM8>'
+    userDescIn  = 'enumeratedprotocolid'
+  Inserting nested type 'ENUM8'
+  Inserting nested type 'ENUM8'
+    References    'ENUM8'
+  
+    userLabelIn = 'PWRHA'
+    userFlagsIn = ':T'
+    userTdlIn   = '[31:<FLT32>]'
+    userDescIn  = 'powerharmonics'
+  Inserting nested type 'FLT32'
+  Inserting nested type 'FLT32'
+    References    'FLT32'
+  
+    userLabelIn = 'QURPTENA'
+    userFlagsIn = ':T'
+    userTdlIn   = '<BOOL>'
+    userDescIn  = 'qualityreportenable'
+  Inserting nested type 'BOOL'
+  Inserting nested type 'BOOL'
+    References    'BOOL'
+  
+    userLabelIn = 'RBEPD'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT32U>'
+    userDescIn  = 'reportperiod'
+  Inserting nested type 'INT32U'
+  Inserting nested type 'INT32U'
+    References    'INT32U'
+  
+    userLabelIn = 'RPTENA'
+    userFlagsIn = ':T'
+    userTdlIn   = '<BOOL>'
+    userDescIn  = 'Reportenable'
+  Inserting nested type 'BOOL'
+  Inserting nested type 'BOOL'
+    References    'BOOL'
+  
+    userLabelIn = 'RPTID'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR32>'
+    userDescIn  = 'ReportID'
+  Inserting nested type 'VSTR32'
+  Inserting nested type 'VSTR32'
+    References    'VSTR32'
+  
+    userLabelIn = 'RVSPWRHA'
+    userFlagsIn = ':T'
+    userTdlIn   = '[31:<FLT32>]'
+    userDescIn  = 'reversepowerharmonics'
+  Inserting nested type 'FLT32'
+  Inserting nested type 'FLT32'
+    References    'FLT32'
+  
+    userLabelIn = 'SBOENA'
+    userFlagsIn = ':T'
+    userTdlIn   = '<BOOL>'
+    userDescIn  = 'SBOenable'
+  Inserting nested type 'BOOL'
+  Inserting nested type 'BOOL'
+    References    'BOOL'
+  
+    userLabelIn = 'SETTIMOUT'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT8U>'
+    userDescIn  = 'SBOSelectTimeout'
+  Inserting nested type 'INT8U'
+  Inserting nested type 'INT8U'
+    References    'INT8U'
+  
+    userLabelIn = 'SEQNUM'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT32U>'
+    userDescIn  = 'Sequencenumber'
+  Inserting nested type 'INT32U'
+  Inserting nested type 'INT32U'
+    References    'INT32U'
+  
+    userLabelIn = 'SERNUM'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR32>'
+    userDescIn  = 'Serialnumber'
+  Inserting nested type 'VSTR32'
+  Inserting nested type 'VSTR32'
+    References    'VSTR32'
+  
+    userLabelIn = 'SFTREV'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR8>'
+    userDescIn  = 'SoftwareRevisionNumber'
+  Inserting nested type 'VSTR8'
+  Inserting nested type 'VSTR8'
+    References    'VSTR8'
+  
+    userLabelIn = 'SMPRATE'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT16U>'
+    userDescIn  = 'samplerate'
+  Inserting nested type 'INT16U'
+  Inserting nested type 'INT16U'
+    References    'INT16U'
+  
+    userLabelIn = 'TAGD'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR128>'
+    userDescIn  = 'tagdescription'
+  Inserting nested type 'VSTR128'
+  Inserting nested type 'VSTR128'
+    References    'VSTR128'
+  
+    userLabelIn = 'TAGID'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT8U>'
+    userDescIn  = 'tagID'
+  Inserting nested type 'INT8U'
+  Inserting nested type 'INT8U'
+    References    'INT8U'
+  
+    userLabelIn = 'TAGOWN'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR32>'
+    userDescIn  = 'tagowner'
+  Inserting nested type 'VSTR32'
+  Inserting nested type 'VSTR32'
+    References    'VSTR32'
+  
+    userLabelIn = 'TAGTYP'
+    userFlagsIn = ':T'
+    userTdlIn   = '<BSTR8>'
+    userDescIn  = 'tagtypepermitted'
+  Inserting nested type 'BSTR8'
+  Inserting nested type 'BSTR8'
+    References    'BSTR8'
+  
+    userLabelIn = 'TEMPRAT'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR16>'
+    userDescIn  = 'temperaturerating'
+  Inserting nested type 'VSTR16'
+  Inserting nested type 'VSTR16'
+    References    'VSTR16'
+  
+    userLabelIn = 'TEMPRTG'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR16>'
+    userDescIn  = 'temperaturerating'
+  Inserting nested type 'VSTR16'
+  Inserting nested type 'VSTR16'
+    References    'VSTR16'
+  
+    userLabelIn = 'TIMOFFRZ'
+    userFlagsIn = ':T'
+    userTdlIn   = '<BTIME6>'
+    userDescIn  = 'timeoffreeze'
+  Inserting nested type 'BTIME6'
+  Inserting nested type 'BTIME6'
+    References    'BTIME6'
+  
+    userLabelIn = 'TIMRPTENA'
+    userFlagsIn = ':T'
+    userTdlIn   = '<BOOL>'
+    userDescIn  = 'Timestampreportenable'
+  Inserting nested type 'BOOL'
+  Inserting nested type 'BOOL'
+    References    'BOOL'
+  
+    userLabelIn = 'TRGOPS'
+    userFlagsIn = ':T'
+    userTdlIn   = '<BSTR8>'
+    userDescIn  = 'Triggeroptions'
+  Inserting nested type 'BSTR8'
+  Inserting nested type 'BSTR8'
+    References    'BSTR8'
+  
+    userLabelIn = 'TRGS'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT16U>'
+    userDescIn  = 'numberoftriggers'
+  Inserting nested type 'INT16U'
+  Inserting nested type 'INT16U'
+    References    'INT16U'
+  
+    userLabelIn = 'UNITVARRTG'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR32>'
+    userDescIn  = 'Unitvarrating'
+  Inserting nested type 'VSTR32'
+  Inserting nested type 'VSTR32'
+    References    'VSTR32'
+  
+    userLabelIn = 'UNKPWRHA'
+    userFlagsIn = ':T'
+    userTdlIn   = '[31:<FLT32>]'
+    userDescIn  = 'Unkownharmonicdirection'
+  Inserting nested type 'FLT32'
+  Inserting nested type 'FLT32'
+    References    'FLT32'
+  
+    userLabelIn = 'USEST'
+    userFlagsIn = ':T'
+    userTdlIn   = '<BOOL>'
+    userDescIn  = 'utilizationstatus'
+  Inserting nested type 'BOOL'
+  Inserting nested type 'BOOL'
+    References    'BOOL'
+  
+    userLabelIn = 'VARRTG'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR16>'
+    userDescIn  = 'Varsrating'
+  Inserting nested type 'VSTR16'
+  Inserting nested type 'VSTR16'
+    References    'VSTR16'
+  
+    userLabelIn = 'VARTG'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR16>'
+    userDescIn  = 'VARsrating'
+  Inserting nested type 'VSTR16'
+  Inserting nested type 'VSTR16'
+    References    'VSTR16'
+  
+    userLabelIn = 'VND'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR32>'
+    userDescIn  = 'VendorID'
+  Inserting nested type 'VSTR32'
+  Inserting nested type 'VSTR32'
+    References    'VSTR32'
+  
+    userLabelIn = 'VRTG'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR16>'
+    userDescIn  = 'voltagerating'
+  Inserting nested type 'VSTR16'
+  Inserting nested type 'VSTR16'
+    References    'VSTR16'
+  
+    userLabelIn = 'WRNLEV'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT16U>'
+    userDescIn  = 'logwarninglevel'
+  Inserting nested type 'INT16U'
+  Inserting nested type 'INT16U'
+    References    'INT16U'
+  
+    userLabelIn = 'WRNST'
+    userFlagsIn = ':T'
+    userTdlIn   = '<BOOL>'
+    userDescIn  = 'warningstatus'
+  Inserting nested type 'BOOL'
+  Inserting nested type 'BOOL'
+    References    'BOOL'
+  
+    userLabelIn = 'PHSTAR'
+    userFlagsIn = ':T'
+    userTdlIn   = '<ENUM8>'
+    userDescIn  = 'PhaseTarget'
+  Inserting nested type 'ENUM8'
+  Inserting nested type 'ENUM8'
+    References    'ENUM8'
+  
+    userLabelIn = 'SBO'
+    userFlagsIn = ':T'
+    userTdlIn   = '<VSTR65>'
+    userDescIn  = ''
+  Inserting nested type 'VSTR65'
+  Inserting nested type 'VSTR65'
+    References    'VSTR65'
+  
+    userLabelIn = 'STNUM'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT32U>'
+    userDescIn  = ''
+  Inserting nested type 'INT32U'
+  Inserting nested type 'INT32U'
+    References    'INT32U'
+  
+    userLabelIn = 'HOLDTIM'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT32U>'
+    userDescIn  = ''
+  Inserting nested type 'INT32U'
+  Inserting nested type 'INT32U'
+    References    'INT32U'
+  
+    userLabelIn = 'BACKTIM'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT32U>'
+    userDescIn  = ''
+  Inserting nested type 'INT32U'
+  Inserting nested type 'INT32U'
+    References    'INT32U'
+  
+    userLabelIn = 'PHSID'
+    userFlagsIn = ':T'
+    userTdlIn   = '<INT16U>'
+    userDescIn  = ''
+  Inserting nested type 'INT16U'
+  Inserting nested type 'INT16U'
+    References    'INT16U'
+  
+    userLabelIn = 'DNA'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Bstring64'
+    userDescIn  = ''
+  
+    userLabelIn = 'USERST'
+    userFlagsIn = ':T'
+    userTdlIn   = 'BVstring256'
+    userDescIn  = ''
+  
+    currFile = '..\..\mvl\usr\client\clntobj.odf'
+  
+    currFile = 'rpt.odf'
+  
+    userLabelIn = 'RTYP_BOOL'
+    userFlagsIn = ':TKU'
+    userTdlIn   = '<BOOL>'
+    userDescIn  = 'UCAreporttypes'
+  Inserting nested type 'BOOL'
+  Inserting nested type 'BOOL'
+    References    'BOOL'
+  
+    userLabelIn = 'RTYP_BTIME6'
+    userFlagsIn = ':TKU'
+    userTdlIn   = '<BTIME6>'
+    userDescIn  = 'UCAreporttypes'
+  Inserting nested type 'BTIME6'
+  Inserting nested type 'BTIME6'
+    References    'BTIME6'
+  
+    userLabelIn = 'RTYP_BSTR6'
+    userFlagsIn = ':TKU'
+    userTdlIn   = 'Bstring6'
+    userDescIn  = 'UCAreporttypes'
+  
+    userLabelIn = 'RTYP_BSTR8'
+    userFlagsIn = ':TKU'
+    userTdlIn   = 'Bstring8'
+    userDescIn  = 'UCAreporttypes'
+  
+    userLabelIn = 'RTYP_BSTR9'
+    userFlagsIn = ':TKU'
+    userTdlIn   = 'Bstring9'
+    userDescIn  = 'Client needs for writing OptFlds'
+  
+    userLabelIn = 'RTYP_BVSTR6'
+    userFlagsIn = ':TKU'
+    userTdlIn   = 'Bvstring6'
+    userDescIn  = 'UCAreporttypes'
+  
+    userLabelIn = 'RTYP_BVSTR8'
+    userFlagsIn = ':TKU'
+    userTdlIn   = 'Bvstring8'
+    userDescIn  = 'UCAreporttypes'
+  
+    userLabelIn = 'RTYP_BVSTR10'
+    userFlagsIn = ':TKU'
+    userTdlIn   = 'Bvstring10'
+    userDescIn  = 'UCAreporttypes'
+  
+    userLabelIn = 'RTYP_INT8U'
+    userFlagsIn = ':TKU'
+    userTdlIn   = '<INT8U>'
+    userDescIn  = 'UCAreporttypes'
+  Inserting nested type 'INT8U'
+  Inserting nested type 'INT8U'
+    References    'INT8U'
+  
+    userLabelIn = 'RTYP_INT16U'
+    userFlagsIn = ':TKU'
+    userTdlIn   = '<INT16U>'
+    userDescIn  = 'UCAreporttypes'
+  Inserting nested type 'INT16U'
+  Inserting nested type 'INT16U'
+    References    'INT16U'
+  
+    userLabelIn = 'RTYP_OSTR8'
+    userFlagsIn = ':TKU'
+    userTdlIn   = 'Ostring8'
+    userDescIn  = 'UCAreporttypes'
+  
+    userLabelIn = 'RTYP_VSTR32'
+    userFlagsIn = ':TKU'
+    userTdlIn   = '<VSTR32>'
+    userDescIn  = 'UCAreporttypes'
+  Inserting nested type 'VSTR32'
+  Inserting nested type 'VSTR32'
+    References    'VSTR32'
+  
+    userLabelIn = 'RTYP_VSTR65'
+    userFlagsIn = ':TKU'
+    userTdlIn   = '<VSTR65>'
+    userDescIn  = 'UCAreporttypes'
+  Inserting nested type 'VSTR65'
+  Inserting nested type 'VSTR65'
+    References    'VSTR65'
+  
+    userLabelIn = 'RTYP_OBJREF'
+    userFlagsIn = ':TKU'
+    userTdlIn   = 'Vstring129'
+    userDescIn  = 'UCAreporttypes'
+  
+    userLabelIn = 'RTYP_INT32U'
+    userFlagsIn = ':TKU'
+    userTdlIn   = '<INT32U>'
+    userDescIn  = 'UCAreporttypes'
+  Inserting nested type 'INT32U'
+  Inserting nested type 'INT32U'
+    References    'INT32U'
+  
+    currFile = '..\..\mvl\usr\client\clntobj.odf'
+  
+    userIncIn = 'client.h'
+  
+    userLabelIn = 'ANALOG'
+    userFlagsIn = ':T'
+    userTdlIn   = '[32:Ushort]'
+    userDescIn  = 'Array Of 32 16-bit unsigned integers'
+  
+    userLabelIn = 'U16'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Ushort'
+    userDescIn  = 'Single 16-bit unsigned integer'
+  
+    userLabelIn = 'I16'
+    userFlagsIn = ':TK'
+    userTdlIn   = 'Short'
+    userDescIn  = 'Single 16-bit signed integer'
+  
+    userLabelIn = 'UTF8VSTRING13'
+    userFlagsIn = ':TK'
+    userTdlIn   = 'UTF8Vstring13'
+    userDescIn  = 'variable len Unicode UTF8 string'
+  
+    userLabelIn = 'phv_type'
+    userFlagsIn = ':TK'
+    userTdlIn   = '{(phsA){(instCVal){(mag){(i)Long,(f)Float,},(ang){(i)Long,(f)Float,},},(cVal){(mag){(i)Long,(f)Float,},(ang){(i)Long,(f)Float,},},(range)Byte,(q)BVstring13,(t)Utctime,},(phsB){(instCVal){(mag){(i)Long,(f)Float,},(ang){(i)Long,(f)Float,},},(cVal){(mag){(i)Long,(f)Float,},(ang){(i)Long,(f)Float,},},(range)Byte,(q)BVstring13,(t)Utctime,},(phsC){(instCVal){(mag){(i)Long,(f)Float,},(ang){(i)Long,(f)Float,},},(cVal){(mag){(i)Long,(f)Float,},(ang){(i)Long,(f)Float,},},(range)Byte,(q)BVstring13,(t)Utctime,},(neut){(instCVal){(mag){(i)Long,(f)Float,},(ang){(i)Long,(f)Float,},},(cVal){(mag){(i)Long,(f)Float,},(ang){(i)Long,(f)Float,},},(range)Byte,(q)BVstring13,(t)Utctime,},(net){(instCVal){(mag){(i)Long,(f)Float,},(ang){(i)Long,(f)Float,},},(cVal){(mag){(i)Long,(f)Float,},(ang){(i)Long,(f)Float,},},(range)Byte,(q)BVstring13,(t)Utctime,},(res){(instCVal){(mag){(i)Long,(f)Float,},(ang){(i)Long,(f)Float,},},(cVal){(mag){(i)Long,(f)Float,},(ang){(i)Long,(f)Float,},},(range)Byte,(q)BVstring13,(t)Utctime,},}'
+    userDescIn  = ''
+  
+    userLabelIn = 'phsx_type'
+    userFlagsIn = ':TK'
+    userTdlIn   = '{(instCVal){(mag){(i)Long,(f)Float,},(ang){(i)Long,(f)Float,},},(cVal){(mag){(i)Long,(f)Float,},(ang){(i)Long,(f)Float,},},(range)Byte,(q)BVstring13,(t)Utctime,}'
+    userDescIn  = ''
+
+2018-09-18 21:52:09.225 SLOGALWAYS (fo_opt.c 62 ThreadId=0x35F8 (13816)) 
+  Removing transient and unreferenced base types ...
+    Removing unreferenced variable type 'BOOLEAN'
+    Removing unreferenced variable type 'INT8'
+    Removing unreferenced variable type 'INT16'
+    Removing unreferenced variable type 'INT32'
+    Removing unreferenced variable type 'INT128'
+    Removing unreferenced variable type 'INT8U'
+    Removing unreferenced variable type 'INT16U'
+    Removing unreferenced variable type 'INT32U'
+    Removing unreferenced variable type 'FLOAT32'
+    Removing unreferenced variable type 'FLOAT64'
+    Removing unreferenced variable type 'ENUMERATED8'
+    Removing unreferenced variable type 'ENUMERATED16'
+    Removing unreferenced variable type 'OCTET_STRING8'
+    Removing unreferenced variable type 'OCTET_STRING64'
+    Removing unreferenced variable type 'VISIBLE_STRING255'
+    Removing unreferenced variable type 'VISIBLE_STRING64'
+    Removing unreferenced variable type 'VISIBLE_STRING97'
+    Removing unreferenced variable type 'UTC_TM'
+    Removing unreferenced variable type 'CODED_ENUM2'
+    Removing unreferenced variable type 'UNICODE_STRING255'
+    Removing unreferenced variable type 'TimeStamp'
+    Removing unreferenced variable type 'EntryTime'
+    Removing unreferenced variable type 'Quality'
+    Removing unreferenced variable type 'IDENT'
+    Removing unreferenced variable type 'BOOL'
+    Removing unreferenced variable type 'B2'
+    Removing unreferenced variable type 'D'
+    Removing unreferenced variable type 'DB'
+    Removing unreferenced variable type 'F'
+    Removing unreferenced variable type 'FF'
+    Removing unreferenced variable type 'HL'
+    Removing unreferenced variable type 'HHL'
+    Removing unreferenced variable type 'LL'
+    Removing unreferenced variable type 'LLL'
+    Removing unreferenced variable type 'I'
+    Removing unreferenced variable type 'FI'
+    Removing unreferenced variable type 'O'
+    Removing unreferenced variable type 'Q'
+    Removing unreferenced variable type 'R'
+    Removing unreferenced variable type 'FR'
+    Removing unreferenced variable type 'S'
+    Removing unreferenced variable type 'T'
+    Removing unreferenced variable type 'FT'
+    Removing unreferenced variable type 'PP'
+    Removing unreferenced variable type 'U'
+    Removing unreferenced variable type 'VSTR8'
+    Removing unreferenced variable type 'VSTR16'
+    Removing unreferenced variable type 'VSTR32'
+    Removing unreferenced variable type 'VSTR64'
+    Removing unreferenced variable type 'VSTR65'
+    Removing unreferenced variable type 'VSTR128'
+    Removing unreferenced variable type 'BSTR1'
+    Removing unreferenced variable type 'BSTR2'
+    Removing unreferenced variable type 'BSTR8'
+    Removing unreferenced variable type 'BSTR16'
+    Removing unreferenced variable type 'BSTR32'
+    Removing unreferenced variable type 'VBSTR8'
+    Removing unreferenced variable type 'VBSTR16'
+    Removing unreferenced variable type 'VBSTR32'
+    Removing unreferenced variable type 'INT8S'
+    Removing unreferenced variable type 'INT16S'
+    Removing unreferenced variable type 'INT32S'
+    Removing unreferenced variable type 'FLT32'
+    Removing unreferenced variable type 'FLT64'
+    Removing unreferenced variable type 'BTIME4'
+    Removing unreferenced variable type 'BTIME6'
+    Removing unreferenced variable type 'ENUM8'
+    Removing unreferenced variable type 'ENUM16'
+    Removing unreferenced variable type 'MAG'
+    Removing unreferenced variable type 'ANG'
+    Removing unreferenced variable type 'ACCRPTENA'
+    Removing unreferenced variable type 'ACCRS'
+    Removing unreferenced variable type 'ACCSET'
+    Removing unreferenced variable type 'ACTTAGARR'
+    Removing unreferenced variable type 'ANCESTRY'
+    Removing unreferenced variable type 'ANFMT'
+    Removing unreferenced variable type 'BUFTIM'
+    Removing unreferenced variable type 'CID'
+    Removing unreferenced variable type 'CKTID'
+    Removing unreferenced variable type 'CKTPHS'
+    Removing unreferenced variable type 'CLASS'
+    Removing unreferenced variable type 'COMMADR'
+    Removing unreferenced variable type 'COMMREV'
+    Removing unreferenced variable type 'CONTCURRTG'
+    Removing unreferenced variable type 'COUNT'
+    Removing unreferenced variable type 'CRIRPT'
+    Removing unreferenced variable type 'DATSETNAM'
+    Removing unreferenced variable type 'DESTAE'
+    Removing unreferenced variable type 'DEVFCT'
+    Removing unreferenced variable type 'DEVMDLS'
+    Removing unreferenced variable type 'DOW'
+    Removing unreferenced variable type 'DOWSCHED'
+    Removing unreferenced variable type 'ENABLE'
+    Removing unreferenced variable type 'ENCOPT'
+    Removing unreferenced variable type 'ENROLL'
+    Removing unreferenced variable type 'EORBDESC'
+    Removing unreferenced variable type 'EVACON'
+    Removing unreferenced variable type 'EVACNS'
+    Removing unreferenced variable type 'EVACRI'
+    Removing unreferenced variable type 'EVAFCT'
+    Removing unreferenced variable type 'EVAPAR'
+    Removing unreferenced variable type 'EVTENA'
+    Removing unreferenced variable type 'FLTCURDUR'
+    Removing unreferenced variable type 'FLTCURRTG'
+    Removing unreferenced variable type 'FRZENA'
+    Removing unreferenced variable type 'FRZPD'
+    Removing unreferenced variable type 'FWDPWRHA'
+    Removing unreferenced variable type 'HWREV'
+    Removing unreferenced variable type 'HZRTG'
+    Removing unreferenced variable type 'INDAT'
+    Removing unreferenced variable type 'INTGPD'
+    Removing unreferenced variable type 'LINLENM'
+    Removing unreferenced variable type 'LOC'
+    Removing unreferenced variable type 'LOGENA'
+    Removing unreferenced variable type 'LOGENR'
+    Removing unreferenced variable type 'LOGNAM'
+    Removing unreferenced variable type 'LOGSIZE'
+    Removing unreferenced variable type 'LOGWRP'
+    Removing unreferenced variable type 'MAC'
+    Removing unreferenced variable type 'MDL'
+    Removing unreferenced variable type 'MED'
+    Removing unreferenced variable type 'MXREF'
+    Removing unreferenced variable type 'MXTYP'
+    Removing unreferenced variable type 'NAME'
+    Removing unreferenced variable type 'NEWTIM'
+    Removing unreferenced variable type 'NUMBITS'
+    Removing unreferenced variable type 'NUMPLS'
+    Removing unreferenced variable type 'NUMSMP'
+    Removing unreferenced variable type 'NUMUNIT'
+    Removing unreferenced variable type 'OFFDUR'
+    Removing unreferenced variable type 'OLDTIM'
+    Removing unreferenced variable type 'ONDUR'
+    Removing unreferenced variable type 'OPERDEV'
+    Removing unreferenced variable type 'OPTFLDS'
+    Removing unreferenced variable type 'OUTDAT'
+    Removing unreferenced variable type 'OVRST'
+    Removing unreferenced variable type 'OWN'
+    Removing unreferenced variable type 'PRO'
+    Removing unreferenced variable type 'PWRHA'
+    Removing unreferenced variable type 'QURPTENA'
+    Removing unreferenced variable type 'RBEPD'
+    Removing unreferenced variable type 'RPTENA'
+    Removing unreferenced variable type 'RPTID'
+    Removing unreferenced variable type 'RVSPWRHA'
+    Removing unreferenced variable type 'SBOENA'
+    Removing unreferenced variable type 'SETTIMOUT'
+    Removing unreferenced variable type 'SEQNUM'
+    Removing unreferenced variable type 'SERNUM'
+    Removing unreferenced variable type 'SFTREV'
+    Removing unreferenced variable type 'SMPRATE'
+    Removing unreferenced variable type 'TAGD'
+    Removing unreferenced variable type 'TAGID'
+    Removing unreferenced variable type 'TAGOWN'
+    Removing unreferenced variable type 'TAGTYP'
+    Removing unreferenced variable type 'TEMPRAT'
+    Removing unreferenced variable type 'TEMPRTG'
+    Removing unreferenced variable type 'TIMOFFRZ'
+    Removing unreferenced variable type 'TIMRPTENA'
+    Removing unreferenced variable type 'TRGOPS'
+    Removing unreferenced variable type 'TRGS'
+    Removing unreferenced variable type 'UNITVARRTG'
+    Removing unreferenced variable type 'UNKPWRHA'
+    Removing unreferenced variable type 'USEST'
+    Removing unreferenced variable type 'VARRTG'
+    Removing unreferenced variable type 'VARTG'
+    Removing unreferenced variable type 'VND'
+    Removing unreferenced variable type 'VRTG'
+    Removing unreferenced variable type 'WRNLEV'
+    Removing unreferenced variable type 'WRNST'
+    Removing unreferenced variable type 'PHSTAR'
+    Removing unreferenced variable type 'SBO'
+    Removing unreferenced variable type 'STNUM'
+    Removing unreferenced variable type 'HOLDTIM'
+    Removing unreferenced variable type 'BACKTIM'
+    Removing unreferenced variable type 'PHSID'
+    Removing unreferenced variable type 'DNA'
+    Removing unreferenced variable type 'USERST'
+    Removing unreferenced variable type 'ANALOG'
+    Removing unreferenced variable type 'U16'
+
+2018-09-18 21:52:09.253 SLOGALWAYS (fo_opt.c 109 ThreadId=0x35F8 (13816)) 
+  Eliminating Twins
+
+2018-09-18 21:52:09.254 SLOGALWAYS (fo_write.c 171 ThreadId=0x35F8 (13816)) 
+  Writing output files ...
+
+2018-09-18 21:52:09.255 SLOGALWAYS (fo_write.c 923 ThreadId=0x35F8 (13816)) 
+  WRITING VARIABLE INITIALIZATION CODE
+
+2018-09-18 21:52:09.255 SLOGALWAYS (fo_write.c 564 ThreadId=0x35F8 (13816)) 
+  WRITING DOMAIN INITIALIZATION CODE
+
+2018-09-18 21:52:09.255 SLOGALWAYS (fo_write.c 725 ThreadId=0x35F8 (13816)) 
+  WRITING AA INITIALIZATION CODE
+
+2018-09-18 21:52:09.255 SLOGALWAYS (fo_write.c 1025 ThreadId=0x35F8 (13816)) 
+  WRITING VARIABLE LIST INITIALIZATION CODE
+
+2018-09-18 21:52:09.255 SLOGALWAYS (fo_write.c 658 ThreadId=0x35F8 (13816)) 
+  WRITING DOMAIN INITIALIZATION CODE
+
+2018-09-18 21:52:09.255 SLOGALWAYS (fo_write.c 833 ThreadId=0x35F8 (13816)) 
+  WRITING AA VARIABLE LIST INITIALIZATION CODE
+
+2018-09-18 21:52:09.255 SLOGALWAYS (fo_write.c 1370 ThreadId=0x35F8 (13816)) 
+  WRITING JOURNAL INITIALIZATION CODE
+
+2018-09-18 21:52:09.255 SLOGALWAYS (fo_write.c 1213 ThreadId=0x35F8 (13816)) 
+  WRITING RUNTIME TYPES
+    Writing type 'RTYP_BOOL' (0 ref)
+    Writing type 'RTYP_BTIME6' (0 ref)
+    Writing type 'RTYP_BSTR6' (0 ref)
+    Writing type 'RTYP_BSTR8' (0 ref)
+    Writing type 'RTYP_BSTR9' (0 ref)
+    Writing type 'RTYP_BVSTR6' (0 ref)
+    Writing type 'RTYP_BVSTR8' (0 ref)
+    Writing type 'RTYP_BVSTR10' (0 ref)
+    Writing type 'RTYP_INT8U' (0 ref)
+    Writing type 'RTYP_INT16U' (0 ref)
+    Writing type 'RTYP_OSTR8' (0 ref)
+    Writing type 'RTYP_VSTR32' (0 ref)
+    Writing type 'RTYP_VSTR65' (0 ref)
+    Writing type 'RTYP_OBJREF' (0 ref)
+    Writing type 'RTYP_INT32U' (0 ref)
+    Writing type 'I16' (0 ref)
+    Writing type 'UTF8VSTRING13' (0 ref)
+    Writing type 'phv_type' (0 ref)
+    Writing type 'phsx_type' (0 ref)
+
+2018-09-18 21:52:09.259 MEM_LOG_DUMP (mem_chks.c 1334 ThreadId=0x35F8 (13816)) 
+  DYNAMIC MEMORY POINTER TABLE
+----------------------------  
+  Ptr 0x01D2C62C  Size     4  File : ..\..\mvl\util\foundry\fo_write.c #1856
+  Ptr 0x01D2C5FC  Size     4  File : ..\..\mvl\util\foundry\fo_write.c #1856
+  Ptr 0x01D2C5CC  Size     5  File : ..\..\mvl\util\foundry\fo_write.c #1856
+  Ptr 0x01D2C59C  Size     5  File : ..\..\mvl\util\foundry\fo_write.c #1856
+  Ptr 0x01D2C56C  Size     5  File : ..\..\mvl\util\foundry\fo_write.c #1856
+  Ptr 0x01D2C53C  Size     2  File : ..\..\mvl\util\foundry\fo_write.c #1856
+  Ptr 0x01D2C50C  Size     2  File : ..\..\mvl\util\foundry\fo_write.c #1856
+  Ptr 0x01D2C4DC  Size     6  File : ..\..\mvl\util\foundry\fo_write.c #1856
+  Ptr 0x01D2C4AC  Size     5  File : ..\..\mvl\util\foundry\fo_write.c #1856
+  Ptr 0x01D2C47C  Size     4  File : ..\..\mvl\util\foundry\fo_write.c #1856
+  Ptr 0x01D2C44C  Size     2  File : ..\..\mvl\util\foundry\fo_write.c #1856
+  Ptr 0x01D2C26C  Size     2  File : ..\..\mvl\util\foundry\fo_write.c #1856
+  Ptr 0x01D2C2CC  Size     4  File : ..\..\mvl\util\foundry\fo_write.c #1856
+  Ptr 0x01D2C13C  Size     9  File : ..\..\mvl\util\foundry\fo_write.c #1856
+  Ptr 0x01D2C29C  Size     5  File : ..\..\mvl\util\foundry\fo_write.c #1856
+  Ptr 0x01D2C2FC  Size     1  File : ..\..\mvl\util\foundry\fo_write.c #1852
+  Ptr 0x01D33D0C  Size   500  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D33C04  Size   223  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x01D3341C  Size    10  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x01D2C41C  Size     1  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x01D33334  Size   162  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x01D2ADCC  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x01D327AC  Size  2912  File : ..\..\src\mms_tdef.c #2585
+  Ptr 0x01D31BA4  Size  3040  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D315F4  Size  1416  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x01D2C1E4  Size     9  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x01D2C3EC  Size     1  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x01D311D4  Size  1009  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x01D2AD5C  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x01D2CCBC  Size 17644  File : ..\..\src\mms_tdef.c #2585
+  Ptr 0x01D26E74  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D2C3BC  Size     3  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x01D2C1AC  Size    14  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x01D2CC6C  Size    33  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x01D2C174  Size    14  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x01D2ACEC  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x01D290F4  Size   128  File : ..\..\src\mms_tdef.c #2585
+  Ptr 0x01D26E34  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D2C38C  Size     3  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x01D2C35C  Size     4  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x01D16B64  Size    29  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x01D2C32C  Size     6  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x01D2AC7C  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x01D2904C  Size   128  File : ..\..\src\mms_tdef.c #2585
+  Ptr 0x01D26DF4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D2CC04  Size    60  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D2C0CC  Size     9  File : ..\..\mvl\util\foundry\fo_parse.c #0701
+  Ptr 0x01D26DB4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D2C23C  Size     3  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x01D2C094  Size    12  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x01D2C05C  Size    15  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x01D2C024  Size     9  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x01D2AB2C  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x01D28EFC  Size   128  File : ..\..\src\mms_tdef.c #2585
+  Ptr 0x01D26D74  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D2A59C  Size     4  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x01D2BFEC  Size    12  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x01D2BFB4  Size    15  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x01D2BF7C  Size    11  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x01D2AABC  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x01D28E54  Size   128  File : ..\..\src\mms_tdef.c #2585
+  Ptr 0x01D26D34  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D2A56C  Size     3  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x01D2BF44  Size    12  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x01D2BF0C  Size    15  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x01D2BED4  Size     9  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x01D2AA4C  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x01D28DAC  Size   128  File : ..\..\src\mms_tdef.c #2585
+  Ptr 0x01D26CF4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D2A53C  Size     3  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x01D2BE9C  Size    12  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x01D2BE64  Size    15  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x01D2BE2C  Size     9  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x01D2A9DC  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x01D28D04  Size   128  File : ..\..\src\mms_tdef.c #2585
+  Ptr 0x01D26CB4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D2A50C  Size     3  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x01D2BDF4  Size    11  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x01D2BDBC  Size    15  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x01D2BD84  Size     9  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x01D2A96C  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x01D28C5C  Size   128  File : ..\..\src\mms_tdef.c #2585
+  Ptr 0x01D26C74  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D2A4DC  Size     3  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x01D2BD4C  Size    12  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x01D2BD14  Size    15  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x01D2BCDC  Size     9  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x01D2A8FC  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x01D28BB4  Size   128  File : ..\..\src\mms_tdef.c #2585
+  Ptr 0x01D26C34  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D2A4AC  Size     3  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x01D2BCA4  Size    11  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x01D2BC6C  Size    15  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x01D2A47C  Size     8  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x01D2A88C  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x01D28B0C  Size   128  File : ..\..\src\mms_tdef.c #2585
+  Ptr 0x01D26BF4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D2A44C  Size     3  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x01D2BC34  Size    13  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x01D2BBFC  Size    15  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x01D2BBC4  Size    11  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x01D2A81C  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x01D28A64  Size   128  File : ..\..\src\mms_tdef.c #2585
+  Ptr 0x01D26BB4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D2A41C  Size     3  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x01D2BB8C  Size    12  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x01D2BB54  Size    15  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x01D2BB1C  Size    10  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x01D2A7AC  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x01D289BC  Size   128  File : ..\..\src\mms_tdef.c #2585
+  Ptr 0x01D26B74  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D2A3EC  Size     3  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x01D2BAE4  Size    12  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x01D2BAAC  Size    15  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x01D2BA74  Size    10  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x01D2A73C  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x01D28914  Size   128  File : ..\..\src\mms_tdef.c #2585
+  Ptr 0x01D26B34  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D2A3BC  Size     3  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x01D2BA3C  Size    11  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x01D2B9D4  Size    33  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x01D27B9C  Size     9  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x01D2A6CC  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x01D2886C  Size   128  File : ..\..\src\mms_tdef.c #2585
+  Ptr 0x01D26AF4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D2A38C  Size     3  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x01D27B64  Size    11  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x01D27B2C  Size    15  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x01D27AF4  Size     9  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x01D2A65C  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x01D287C4  Size   128  File : ..\..\src\mms_tdef.c #2585
+  Ptr 0x01D26AB4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D2A35C  Size     3  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x01D27ABC  Size    11  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x01D27A84  Size    15  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x01D27A4C  Size     9  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x01D2A5EC  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x01D2871C  Size   128  File : ..\..\src\mms_tdef.c #2585
+  Ptr 0x01D26A74  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D2A32C  Size     3  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x01D27A14  Size    12  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x01D279DC  Size    15  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x01D279A4  Size     9  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x01D25ADC  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x01D28674  Size   128  File : ..\..\src\mms_tdef.c #2585
+  Ptr 0x01D26A34  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D2A2FC  Size     2  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x01D2796C  Size    10  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x01D27934  Size    15  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x01D2A2CC  Size     7  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x01D25A6C  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x01D285CC  Size   128  File : ..\..\src\mms_tdef.c #2585
+  Ptr 0x01D269F4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D269B4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D26974  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D26934  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D268F4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D268B4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D26874  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D26834  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D267F4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D267B4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D26774  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D26734  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D266F4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D266B4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D26674  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D27D6C  Size    60  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D265B4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D26574  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D264F4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D264B4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D26434  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D263F4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1F744  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1F6C4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1F644  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1F604  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1F5C4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1F584  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1F544  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1F4C4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1F484  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1F444  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1F3C4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D25B74  Size    60  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1F344  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1F304  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1F2C4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1F284  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D2497C  Size    60  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1F204  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1F184  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1F144  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1F104  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1F084  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1F044  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1F004  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1EFC4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1EF84  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1EF44  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1EF04  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1EEC4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1EE84  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1EE44  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1EE04  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1EDC4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1ED84  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1ED04  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1ECC4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1EC84  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1EC04  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1EBC4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1EB84  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1EB44  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1EB04  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1EAC4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1EA84  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1EA04  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1E9C4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1E984  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1E944  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01DFFF9C  Size    60  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1E884  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1E844  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1E804  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19F84  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19F04  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19EC4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19E84  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19E04  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19D84  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19D04  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19C84  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19C44  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19C04  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19BC4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01DFFDA4  Size    60  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19B44  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19B04  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19AC4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19A84  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19A04  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D199C4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19984  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19944  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D198C4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19844  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D197C4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19784  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19744  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19704  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D196C4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19684  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19644  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19604  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19584  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19504  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19484  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19404  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D193C4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19384  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19344  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19304  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19284  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19244  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D191C4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19144  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D190C4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19044  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D19004  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13E34  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13DF4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13DB4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13D74  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13D34  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13CF4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13CB4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13C74  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13C34  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13BF4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13BB4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13B74  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13B34  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13AF4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13AB4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13A74  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13A34  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D139B4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13974  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D138F4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D138B4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13874  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13834  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D137B4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13774  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13734  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D136F4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D136B4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13674  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13634  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D135F4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D135B4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13574  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D134F4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D134B4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13474  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13434  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D133B4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13374  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D132B4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13234  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D131B4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D130F4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D13034  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D12F74  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D12EF4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D12E5C  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D12C84  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D12AAC  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1290C  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D1276C  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D125D4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D12444  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01D122B4  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01CC80BC  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01CC7E8C  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01CC7C64  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01CC7A44  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x01DF25B4  Size     8  File : ..\..\mvl\util\foundry\fo_parse.c #0471
+  Ptr 0x01DF257C  Size    12  File : ..\..\mvl\util\foundry\fo_parse.c #0470
+  Ptr 0x01DF2544  Size    13  File : ..\..\mvl\util\foundry\fo_parse.c #0471
+  Ptr 0x01DF250C  Size    12  File : ..\..\mvl\util\foundry\fo_parse.c #0470
+  Ptr 0x01DF24C4  Size    29  File : ..\..\mvl\util\foundry\fo_parse.c #0439
+  ---- END OF MEMORY POINTER TABLE ----------
+  Total number of allocated pointers:   334
+  Total amount of memory allocated:     35409 bytes 
+  Maximum number of pointers allocated: 1394
+  Maximum amount of memory allocated:   378050 bytes

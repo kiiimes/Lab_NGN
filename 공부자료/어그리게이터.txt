@@ -1,0 +1,12 @@
+대주제 : aggregator DB 설계
+(1) DB 요구사항 => 이러한 기능들이 필요하다를 서술 
+(2) DB 설계 =>시퀀스 다이어그램// LN 정의 및 dataset 
+
+
+aggregator 에서 필요한 DB 정보들을 (1) 에서 서술 정확히는... 이 aggregator가
+이런 기능을 하니까 어떤 데이터를 필요로 하는지를 적어야함
+
+무슨 요청을 했을 때 어떻게 처리하는지를 나타내는게 sequence diagram
+LN 정의 및 dataset 이거를 LN 별로 설계사양서 표로 나타냄
+
+
